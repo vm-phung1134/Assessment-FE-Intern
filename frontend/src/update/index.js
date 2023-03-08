@@ -123,7 +123,7 @@ function UpdateUser() {
                 )}
               </div>
               <div className="footer-box">
-                <Link to="/">
+                <Link style={{textDecoration: "none"}} to="/">
                   <div className="btn-cancel">
                     <p>Cancel</p>
                   </div>

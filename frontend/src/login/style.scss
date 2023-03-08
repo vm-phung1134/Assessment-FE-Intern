@@ -20,7 +20,7 @@
       display: flex;
       flex-direction: column;
       align-items: center;
-      font-size: 12px;
+      font-size: 13px;
       color: #413f3f;
       .errs{
         color:rgb(230, 9, 9);
@@ -37,7 +37,7 @@
       }
       input {
         border-radius: 7px;
-        border: 2px solid #cac5c5;
+        border: 1px solid #cac5c5;
         padding: 10px;
       }
       input:focus{
@@ -79,6 +79,98 @@
           border-radius: 7px;
           border: none;
           background-color: #6b0bda;
+        }
+      }
+    }
+  }
+}
+
+// RESPONSIVE FOR MOBILE
+@media (max-width: 640px) {
+  .login-box {
+    width: 400px;
+    height: 450px;
+    .form-group {
+      padding: 0px 15px;
+      .title {
+        font-size: 10px;
+      }
+      .user-box {
+        label {
+          margin-top: 10px;
+          padding: 0px;
+          font-size: 14px;
+        }
+        input {
+          border: 1px solid #cac5c5;
+          padding: 10px;
+        }
+        .error{
+          color: red;
+          font-size: 10px;
+        }
+      }
+      .footer-box {
+        .checkbox {
+          padding-left: 5px;
+          input {
+            margin: 0 5px 0 0;
+            height: 10px;
+            width: 10px;
+          }
+          label{
+            font-size: 12px;
+          }
+        }
+        .btn-submit {
+          button {
+            padding: 7px 20px;
+          }
+        }
+      }
+    }
+  }
+}
+
+// RESPONSIVE FOR LAPTOP
+@media (min-width:1024px) {
+  .login-box {
+    width: 450px;
+    height: 500px;
+    .form-group {
+      padding: 0px 18px;
+      .title {
+        font-size: 15px;
+      }
+      .user-box {
+        input {
+          border: 2px solid #cac5c5;
+          padding: 12px;
+          margin: 2px 0;
+        }
+        .error{
+          color: red;
+          font-size: 10px;
+        }
+      }
+      .footer-box {
+        margin: 10px 0px;
+        .checkbox {
+          padding-left: 5px;
+          input {
+            margin: 0 5px 0 0;
+            height: 15px;
+            width: 15px;
+          }
+          label{
+            font-size: 17px;
+          }
+        }
+        .btn-submit {
+          button {
+            padding: 10px 30px;
+            font-size: 17px;
+          }
         }
       }
     }
